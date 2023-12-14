@@ -1,0 +1,73 @@
+:root {
+    --primary-color:#235789;
+    --secondary-color: #DFF8EB;
+    --terziary-color: #D9F7FA;
+    --standard-border: 1px solid black;
+    --tycker-border: 3px solid black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    min-height: 100%;
+    text-align: center;
+    
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: var(--standard-border);
+}
+h1 {
+    font-size: calc(2rem + 2vw);
+    font-style: oblique; 
+    font-weight: bold;
+}
+
+section {
+    background-color: var(--secondary-color);
+    
+}
+
+.cards-display-table {
+    position: relative;
+    background-color: var(--terziary-color);
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.new-match,
+.reset {
+    border: var(--standard-border);
+    border-radius: 10%;
+    cursor: pointer;
+    padding: 16px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.new-match:hover,
+.reset:hover {
+    background-color: var(--terziary-color);
+    color: var(--primary-color);
+} 
