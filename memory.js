@@ -38,3 +38,7 @@ placeholderShuffledEmojis.forEach( emoji => {
 })
 
 
+
+
+document.querySelector(".reset").addEventListener("click", () => window.location.reload());
+
