@@ -16,7 +16,7 @@ const emojis= [
     String.fromCodePoint(0x1F977),
     String.fromCodePoint(0x1F977)
 ];
-document.querySelector("h1").innerHTML= emojis.join(" ");
+
 
 
 
