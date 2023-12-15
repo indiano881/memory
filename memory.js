@@ -30,4 +30,11 @@ const shuffleCards = () => {
 shuffleCards();
 console.log(placeholderShuffledEmojis);
 
+placeholderShuffledEmojis.forEach( emoji => {
+    let box = document.createElement("div");
+    box.classList.add = "item";//card e meglio?
+    box.textContent= emoji;
+    document.querySelector(".cards-display-table").appendChild(box);
+})
+
 
