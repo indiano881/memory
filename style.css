@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "emoji";
+    src: url(./tipography/NotoColorEmoji-Regular.woff);
+}
+@font-face {
+    font-family: "tilt-neon";
+    src: url(./tipography/NotoColorEmoji-Regular.woff2);
+}
+
 :root {
     --primary-color:#235789;
     --secondary-color: #DFF8EB;
