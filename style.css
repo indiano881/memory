@@ -15,8 +15,7 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     min-height: 100%;
@@ -37,23 +36,29 @@ h1 {
 
 section {
     background-color: var(--secondary-color);
+    display: flex;
+    
     
 }
 
 .cards-display-table {
     position: relative;
     background-color: var(--terziary-color);
-    display: flex;
-    flex-grow: 1;
-    flex-wrap: wrap;
+    border: var(--standard-border);
+    display: grid;
+    grid-template: repeat(4 , 1fr) / repeat(4 , 1fr);
+    margin: 5% 10%;
     gap: 5px;
-    flex-direction: column;
     transform-style: preserve-3d;
-    
+    flex-grow: 1;
+}
+
+.item {
+    border: var(--tycker-border);
 }
 
 .buttons {
-    display: flex;
+    
     justify-content: space-evenly;
 }
 
