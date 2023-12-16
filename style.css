@@ -60,7 +60,7 @@ section {
     background-color: var(--terziary-color);
     align-items: center;
     justify-content: center;
-    font-size: calc(1.5rem+1vw);
+    font-size: calc(2.2rem + 1vw);
 }
 
 .buttons {
@@ -75,6 +75,7 @@ section {
     border: var(--standard-border);
     border-radius: 10%;
     cursor: pointer;
+    font-size: calc(1.5rem + 1vw);
     padding: 16px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
