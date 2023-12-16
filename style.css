@@ -37,14 +37,14 @@ h1 {
 section {
     background-color: var(--secondary-color);
     display: flex;
+    flex-direction: column;
     
     
 }
 
 .cards-display-table {
     position: relative;
-    background-color: var(--terziary-color);
-    border: var(--standard-border);
+    background-color: var(--secondary-color);
     display: grid;
     grid-template: repeat(4 , 1fr) / repeat(4 , 1fr);
     margin: 5% 10%;
@@ -53,11 +53,19 @@ section {
     flex-grow: 1;
 }
 
-.item {
+.grid-item {
     border: var(--tycker-border);
+    cursor: pointer;;
+    min-height: 50px;
+    background-color: var(--terziary-color);
+    align-items: center;
+    justify-content: center;
+    font-size: calc(1.5rem+1vw);
 }
 
 .buttons {
+    display: flex;
+    
     
     justify-content: space-evenly;
 }

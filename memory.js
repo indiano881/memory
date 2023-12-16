@@ -32,7 +32,7 @@ console.log(placeholderShuffledEmojis);
 
 placeholderShuffledEmojis.forEach( emoji => {
     let box = document.createElement("div");
-    box.classList.add = "item";//card e meglio?
+    box.className = "grid-item";//card e meglio?//senza senso cosi va messo come mouse click o mouse enter
     box.textContent= emoji;
     document.querySelector(".cards-display-table").appendChild(box);
 })
